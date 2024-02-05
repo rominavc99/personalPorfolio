@@ -8,39 +8,40 @@ import CanvasLoader from "../Loader";
 const Computers = ({isMobile}) => {
 
  
-  const computer = useGLTF("./heropd/pcPortoflio.gltf");
+  const computer = useGLTF("./pvc8/vintagepc.gltf");
   
   return (
-
-    
     <mesh>
       <group>
+        <hemisphereLight intensity={5} groundColor="black" />
 
-         <hemisphereLight intensity={7}
-          groundColor="black" />
-        
-        <spotLight  
-          position={[20, 20, 20]}
-          angle={4}  
-          intensity={7}
+        <spotLight
+          position={[-6, -7, -2.5]}
+          angle={7}
+          intensity={4}
           castShadow
           shadow-mapSize={1024}
-        
-        > </spotLight>
-      <primitive
-        object={computer.scene}
-        scale={ isMobile ? 0.5 : 0.75}
-        position={ isMobile ? [0, -2.5, 0] : [.5, -1, .5]}
-        rotation={[0, 6.3, 0]}
-      />
-
+        >
+          {" "}
+        </spotLight>
+        <spotLight
+          position={[-6, 7, -2.5]}
+          angle={7}
+          intensity={4}
+          castShadow
+          shadow-mapSize={1024}
+        >
+          {" "}
+        </spotLight>
+        <primitive
+          object={computer.scene}
+          scale={isMobile ? 0.3 : 0.4}
+          position={isMobile ? [0, -4, 0] : [0.5, -4, 0.5]}
+          rotation={[0, 6.3, 0]}
+        />
       </group>
-       
-    </mesh>   
- 
-   
-    
-  )
+    </mesh>
+  );
 }
 
 const ComputersCanvas = () => {
@@ -64,24 +65,23 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
-      shadows 
+      frameloop="demand"
+      shadows
       camera={{ position: [20, 5, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false}
+        <OrbitControls
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={ isMobile} />
-
+        <Computers isMobile={isMobile} />
+        
       </Suspense>
-      <Preload all/>
-
+      <Preload all />
     </Canvas>
-  )
+  );
 }
 
 export default ComputersCanvas;
