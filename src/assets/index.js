@@ -34,6 +34,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import readinglist from "./readinglist.png";
 import render from "./renderco_logo.png";
+import datalab from "./datalab.png";
+import ideacatche from "./ideacatcher.png";
 
 
 export {
@@ -70,4 +72,6 @@ export {
   frontend,
   multimedia,
   webdesing,
+  datalab,
+  ideacatche,
 };

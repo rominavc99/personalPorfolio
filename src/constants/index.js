@@ -28,6 +28,8 @@ import {
   frontend,
   multimedia,
   webdesing,
+  datalab,
+  ideacatche,
 } from "../assets"
 
 
@@ -167,7 +169,7 @@ const experiences = [
     iconBg: "#EE3C3C",
     date: "Jul 2023 - Nov 2023",
     points: [
-      "Professional internship for backend development usint Python and Django",
+      "Professional internship for backend development using Python and Django",
       "Frontend development using Bootstrap, HTML, CSS and JS.",
     ],
   },
@@ -215,6 +217,48 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Data Lab",
+    description:
+      "Designed the landing page for a personal project featuring a data analytics company, as part of a React course. This project was developed with the goal of enhancing my React and Tailwind CSS skills.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ui/ux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: datalab,
+    source_code_link: "https://datalab-5.onrender.com/",
+  },
+  {
+    name: "Idea Catcher",
+    description:
+      "This web application for note-taking incorporates the Cornell Note system, enabling users to log in through Google Auth. It allows for the creation, editing, and deletion of notes. The application was developed as a personal project, utilizing Render and Node.js, with a focus on practicing authentication via Google's services and the use of Material UI.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ideacatche,
+    source_code_link: "https://main--ideacatcher2.netlify.app/",
+  },
+  {
     name: "Romina's reading list",
     description:
       "Web-based platform that works as a personal journal for book entries, allows users to read through my posts and search using book titles or authors' names. It has an admin view for me, with a basic login that takes me to the main admin page where I can add, edit, or delete book entries, implementing one of the Public Library's APIs.",
@@ -234,111 +278,6 @@ const projects = [
     ],
     image: readinglist,
     source_code_link: "https://rominasreadinglist.onrender.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
   },
 ];
 
